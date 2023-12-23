@@ -122,19 +122,21 @@ plt.show()
 
 3. Relative Rankings: The relative rankings of provinces in terms of nursing numbers seem consistent between 2018 and 2022, with Ontario, Quebec, and Alberta remaining the top three in both years.
 4. The year-over-year changes in the total number of nurses for the specified periods are as follows:
-  - From 2018 to 2019: There was a decrease of 11,490 nurses.
-  - From 2019 to 2020: There was an increase of 26,259 nurses.
-  - From 2020 to 2021: There was a decrease of 5,432 nurses.
-  - From 2021 to 2022: There was an increase of 4,302 nurses.
-5.Percentage Change in 2019
-  - Alberta: 37.46% increase
-  - British Columbia: 20.09% increase
-  - Manitoba: 3.73% decrease
-  - New Brunswick: 3.48% decrease
-  - Newfoundland and Labrador: 5.72% increase
-6.Percentage Change in 2021
-  - Alberta: 5.29% increase
-  - British Columbia: 40.11% increase
-  - Manitoba: 4.76% increase
-  - New Brunswick: 130.32% increase
-  - Newfoundland and Labrador: 6.68% increase 
+   - From 2018 to 2019: There was a decrease of 11,490 nurses.
+   - From 2019 to 2020: There was an increase of 26,259 nurses.
+   -  From 2020 to 2021: There was a decrease of 5,432 nurses.
+   -  From 2021 to 2022: There was an increase of 4,302 nurses.
+
+5.Percentage Change in Inflow-Outflow of  Nuursing workforce for 2019
+   - Alberta: 37.46% increase
+   - British Columbia: 20.09% increase
+   - Manitoba: 3.73% decrease
+   - New Brunswick: 3.48% decrease
+   - Newfoundland and Labrador: 5.72% increase
+
+6.Percentage Change in Change in Inflow-Outflow of  Nuursing workforce for 2021
+   - Alberta: 5.29% increase
+   - British Columbia: 40.11% increase
+   - Manitoba: 4.76% increase
+   - New Brunswick: 130.32% increase
+   - Newfoundland and Labrador: 6.68% increase 
