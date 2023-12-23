@@ -1,4 +1,16 @@
 # Canada Nursing Workforce Analysis 
+## Table of Contents
+- [Overview](#overview)
+- [Datasets](#datasets)
+- [Data Cleaning](#data-cleaning)
+- [Preliminary Cleaning Using Excel](#preliminary-cleaning-using-excel)
+- [Transformed Tables Using Pandas](#transformed-tables-using-pandas)
+- [SOME SQL QUERIES](#some-sql-queries)
+- [Some Python codes](#some-python-codes)
+- [VISUALISATONS](#visualisations)
+- [Findings](#findings)
+
+### Overview
 This project report encompasses a thorough investigation into the nursing workforce dynamics in Canada to achieve following;
 - Workforce Planning Strategy: To conduct an evaluation of staffing requirements to ensure that the Canadian healthcare system is adequately equipped with the appropriate number of skilled nursing professionals.
 - Prioritizing Patient Safety: The goal is to proactively identify and prevent avoidable incidents through informed workforce management.
