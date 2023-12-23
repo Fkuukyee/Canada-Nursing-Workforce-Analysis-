@@ -53,8 +53,55 @@ FROM (
     GROUP BY Year
 ) AS Yearly_Summary;
 
-```
+-- Calculating percentage changes
+SELECT 
+    Year,
+    Jurisdiction,
+    Total_Inflow,
+    Total_Outflow,
+    CASE 
+        WHEN Total_Outflow > 0 THEN ((Total_Inflow - Total_Outflow) / Total_Outflow) * 100
+        ELSE NULL 
+    END AS Percentage_Change
+FROM (
+    SELECT 
+        Year,
+        Jurisdiction,
+        SUM(Supply_inflow) AS Total_Inflow,
+        SUM(Supply_outflow) AS Total_Outflow
+    FROM 
+        Table1
+    WHERE Year = 2019 OR Year = 2021  -- Specify the years of interest
+    GROUP BY 
+        Year, Jurisdiction
+) AS yearly_stats;
 
+```
+### Some Python codes
+```
+# Plotting the Inflow-Outflow Ratios for 2019 and 2021 with a reference line at ratio 1.0
+
+# For 2019
+plt.figure(figsize=(12, 8))
+sns.barplot(x='Inflow_Outflow_Ratio', y='Jurisdiction', data=yearly_stats_2019, palette='mako')
+plt.axvline(1.0, color='red', linestyle='--')
+plt.title('Inflow-Outflow Ratios of Nurse Practitioners by Jurisdiction (2019)')
+plt.xlabel('Inflow-Outflow Ratio')
+plt.ylabel('Jurisdiction')
+plt.grid(axis='x')
+plt.show()
+
+# For 2021
+plt.figure(figsize=(12, 8))
+sns.barplot(x='Inflow_Outflow_Ratio', y='Jurisdiction', data=yearly_stats_2021, palette='mako')
+plt.axvline(1.0, color='red', linestyle='--')
+plt.title('Inflow-Outflow Ratios of Nurse Practitioners by Jurisdiction (2021)')
+plt.xlabel('Inflow-Outflow Ratio')
+plt.ylabel('Jurisdiction')
+plt.grid(axis='x')
+plt.show()
+
+```
 ### VISUALISATONS
 
 ![image](https://github.com/Fkuukyee/Canada-Nursing-Workforce-Analysis-/assets/147086232/f894e494-7f54-49ae-9a73-ce07cfadb846)
@@ -63,6 +110,9 @@ FROM (
 
 ![image](https://github.com/Fkuukyee/Canada-Nursing-Workforce-Analysis-/assets/147086232/15a92a0f-9440-40e2-b085-f3470ba4aab2)
 
+![image](https://github.com/Fkuukyee/Canada-Nursing-Workforce-Analysis-/assets/147086232/24756eb9-a8da-4e3c-8f68-6401da5812b7)
+
+![image](https://github.com/Fkuukyee/Canada-Nursing-Workforce-Analysis-/assets/147086232/5d2962a8-93dc-4538-a86e-d0d36fcc3f46)
 
 ### Findings
 
@@ -76,3 +126,15 @@ FROM (
   - From 2019 to 2020: There was an increase of 26,259 nurses.
   - From 2020 to 2021: There was a decrease of 5,432 nurses.
   - From 2021 to 2022: There was an increase of 4,302 nurses.
+5.Percentage Change in 2019
+  - Alberta: 37.46% increase
+  - British Columbia: 20.09% increase
+  - Manitoba: 3.73% decrease
+  - New Brunswick: 3.48% decrease
+  - Newfoundland and Labrador: 5.72% increase
+6.Percentage Change in 2021
+  - Alberta: 5.29% increase
+  - British Columbia: 40.11% increase
+  - Manitoba: 4.76% increase
+  - New Brunswick: 130.32% increase
+  - Newfoundland and Labrador: 6.68% increase 
