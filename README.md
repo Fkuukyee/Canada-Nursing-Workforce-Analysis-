@@ -11,8 +11,7 @@
 - [Findings](#findings)
 
 ### Overview
-This project report encompasses a thorough investigation into the nursing workforce dynamics in Canada to achieve following;
-- Workforce Planning Strategy: To conduct an evaluation of staffing requirements to ensure that the Canadian healthcare system is adequately equipped with the appropriate number of skilled nursing professionals.
+This project report encompasses an investigation into the nursing workforce dynamics in Canada for Workforce Planning Strategy: Thus to conduct an evaluation of staffing requirements to ensure that the Canadian healthcare system is adequately equipped with the appropriate number of skilled nursing professionals.
 
 ## Datasets
 The datasets encompass a wealth of information spanning supply, workforce, demographic, characteristics, education, and employment trends within Canada's nursing workforce.
